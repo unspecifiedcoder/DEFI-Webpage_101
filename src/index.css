@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --main-font: "Nominee";
+    --main-text: #fff;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: var(--main-font);
+}
+
+.border {
+    border: 1px solid #ccc;
+}
+
+body {
+    @apply bg-app_bg;
+    overflow-x: hidden;
+}
+
+.app-bg {
+    @apply text-[var(--main-text)];
+}
+
+@font-face {
+    font-family: "Redzone";
+    src: url("/fonts/VTFRedzone-Classic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nominee";
+    src: url("/fonts/Nominee-Medium.ttf") format("truetype");
+}
+
+/* .font-redzone {
+    font-family: "Redzone";
+}
+
+.font-nominee {
+    font-family: "Nominee";
+} */
+
+@layer {
+    .col {
+        @apply flex flex-col flex-wrap;
+    }
+
+    .row {
+        @apply flex flex-row flex-wrap;
+    }
+
+    .center {
+        @apply items-center justify-center;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+button {
+    @apply active:scale-90 transition-transform duration-200;
+}
+
+/* THEME */
+
+.round-gradient {
+    z-index: -1;
+    /* min-height: 100dvh; */
+    /* background: radial-gradient(#9500b3, #56b1fc, transparent); */
+    /* background: radial-gradient(circle at top right, #292442, #330e3a, #1d1b27); */
+}
+
+.dark.round-gradient {
+    background: url("/assets/glossyblack.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.light.round-gradient {
+    background: radial-gradient(circle at top right, #19191a, #454545);
+}
+
+.app-logo {
+    background: linear-gradient(
+        135deg,
+        rgba(33, 150, 243, 1) 10%,
+        rgba(218, 112, 214, 1) 30%,
+        rgba(255, 255, 255, 1) 90%,
+        rgba(255, 255, 255, 0.705) 2%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Roadmap Animations */
+
+.roadmap-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 2rem 0;
+}
+
+.roadmap-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 150px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    position: relative;
+}
+
+.roadmap-step:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.roadmap-step.active .step-content {
+    border-left: 4px solid #71dcf5;
+    padding-left: 1rem;
+}
+
+.step-content {
+    transition: border-left 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+    text-align: center;
+}
+
+.roadmap-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    width: 2rem;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .roadmap-step {
+        min-width: 120px;
+    }
+}
+
+/* Team Section */
+.team-section {
+    @apply fixed inset-0 z-50 bg-black bg-opacity-75 flex items-center justify-center transition-opacity duration-300;
+}
+
+.team-section.hidden {
+    @apply opacity-0 pointer-events-none;
+}
+
+.team-section.visible {
+    @apply opacity-100;
+}
+
+.team-section .modal {
+    @apply bg-white p-8 rounded-lg shadow-lg relative;
+}
+
+.team-section .modal button {
+    @apply absolute top-4 right-4 text-2xl;
+}
+
+.team-section .modal h2 {
+    @apply text-4xl mb-8 text-center font-redzone;
+}
+
+.team-section .modal .team-members {
+    @apply flex gap-8;
+}
+
+.team-section .modal .team-members .member {
+    @apply text-center;
+}
+
+.team-section .modal .team-members .member img {
+    @apply w-48 h-48 object-cover rounded-full mx-auto;
+}
+
+.team-section .modal .team-members .member h3 {
+    @apply mt-4 text-xl font-redzone;
+}
+
+.team-section .modal .team-members .member p {
+    @apply text-app_gray text-sm;
+}
+.team-section .modal .team-members {
+    @apply flex flex-row gap-8;
+}
