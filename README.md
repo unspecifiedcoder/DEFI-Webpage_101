@@ -1,88 +1,72 @@
 <p align="center">
   <a href="#"><img src="https://github.com/mza-codes/minimal-react/blob/62fd10162f49d62abf1aa6b4ec1d5fadbab4a38f/public/logo.png" width="50" alt="logo_m" border="0"></a>
   <br />
-  <h3 align="center">Vite TypeScript Boilerplate</h3>
-  <p align="center"> Integrated With <strong>Tailwind CSS</strong> for sleek styling and rapid development.</p>
+  <h3 align="center">🚀 Vite TypeScript Boilerplate</h3>
   <p align="center">
-    <b>✔ Extra Fonts (Poppins Included)</b> for enhanced typography.
-    <br />
-    <b>✔ Preconfigured Deployment Script</b> for seamless production-ready builds.
-    <br />
-    <b>✔ Built on Yarn, with Axios & React Router-Dom</b> for API handling and navigation.
-    <br />
-    <b>✔ Ready to use and easy to customize!</b>
-    <br /><br />
+    A **modern, minimal, and highly scalable** boilerplate built with **Vite** and **TypeScript**.
+  </p>
+  <p align="center">
+    ✔ **Tailwind CSS** for sleek, responsive UI design.<br />
+    ✔ **Extra Fonts (Including Poppins)** for enhanced typography.<br />
+    ✔ **Axios & React Router-Dom** for API integration and seamless navigation.<br />
+    ✔ **Preconfigured Deployment Script** for hassle-free production-ready builds.<br />
+    ✔ **Yarn-based dependency management** for optimized performance.<br />
+    ✔ **Ready to use & easily customizable!** 🚀
+  </p>
+  
+  ---
+
+  <h3 align="center">✨ Features</h3>
+  <p align="center">
+    ✅ **TypeScript-Powered** – Strong typing ensures better maintainability and debugging.<br />
+    ✅ **Vite for Ultra-Fast Builds** – Hot Module Replacement (HMR) and optimized performance.<br />
+    ✅ **Tailwind CSS Integrated** – A utility-first approach to modern web styling.<br />
+    ✅ **Custom Fonts (Including Poppins)** – For enhanced design aesthetics.<br />
+    ✅ **React Router-Dom Support** – Enables seamless multi-page navigation.<br />
+    ✅ **Axios for API Handling** – Efficient data fetching and HTTP request management.<br />
+    ✅ **Yarn for Dependency Management** – Faster package installation and optimized workflow.<br />
+    ✅ **Preconfigured Deployment Script** – Easily deploy your application.<br />
+    ✅ **Minimal & Lightweight Setup** – No unnecessary complexity—just a clean foundation.<br />
   </p>
 
   ---
 
-  <h3 align="center">🚀 Features</h3>
+  <h3 align="center">⚡ Getting Started</h3>
   <p align="center">
-    ✅ <b>TypeScript-Powered</b> – Ensures strong typing, better maintainability, and scalability.
-    <br />
-    ✅ <b>Vite for Instant Builds</b> – Lightning-fast Hot Module Replacement (HMR) and optimized performance.
-    <br />
-    ✅ <b>Tailwind CSS Integration</b> – Utility-based styling for clean, responsive designs.
-    <br />
-    ✅ <b>Custom Fonts (Including Poppins)</b> – Enhances typography customization.
-    <br />
-    ✅ <b>React Router-Dom Support</b> – Enables seamless navigation within the app.
-    <br />
-    ✅ <b>Axios for API Handling</b> – Efficiently manages HTTP requests and data fetching.
-    <br />
-    ✅ <b>Yarn Dependency Management</b> – Faster package installation and project optimization.
-    <br />
-    ✅ <b>Preconfigured Deployment Script</b> – Simplifies the deployment process.
-    <br />
-    ✅ <b>Minimal & Lightweight Setup</b> – A clean foundation for hassle-free development.
-    <br /><br />
+    📌 **Clone the Repository**<br />
+    <code>git clone https://github.com/unspecifiedcoder/Ozone-protocol-Web.git</code><br /><br />
+
+    📌 **Navigate to Project Directory**<br />
+    <code>cd minimal-react</code><br /><br />
+
+    📌 **Install Dependencies**<br />
+    <code>yarn install</code><br /><br />
+
+    📌 **Start Development Server**<br />
+    <code>yarn dev</code><br />
+    ✨ Runs the project in a local environment with hot reload.<br /><br />
+
+    📌 **Build for Production**<br />
+    <code>yarn build</code><br />
+    ⚙️ Generates optimized assets in the `dist` folder.<br /><br />
+
+    📌 **Preview Production Build**<br />
+    <code>yarn preview</code><br />
+    🚀 Allows local testing of production assets.<br /><br />
+
+    📌 **Deploy Your Application**<br />
+    🔥 Use the **preconfigured deployment script** or set up your own deployment method!<br />
   </p>
 
   ---
 
-  <h3 align="center">🛠 Getting Started</h3>
+  <h3 align="center">🤝 Contributing & Support</h3>
   <p align="center">
-    <b>1️⃣ Clone the Repository:</b>
-    <br />
-    <code>git clone https://github.com/mza-codes/minimal-react.git</code>
-    <br /><br />
+    💡 Have ideas for improvements? Feel free to contribute!<br />
+    📢 Found an issue? Submit a report!<br /><br />
 
-    <b>2️⃣ Navigate to the Project Directory:</b>
-    <br />
-    <code>cd minimal-react</code>
-    <br /><br />
-
-    <b>3️⃣ Install Dependencies:</b>
-    <br />
-    <code>yarn install</code>
-    <br /><br />
-
-    <b>4️⃣ Start Development Server:</b>
-    <br />
-    <code>yarn dev</code>
-    <br /><br />
-
-    <b>5️⃣ Build for Production:</b>
-    <br />
-    <code>yarn build</code>
-    <br /><br />
-
-    <b>6️⃣ Preview Production Build:</b>
-    <br />
-    <code>yarn preview</code>
-    <br /><br />
-
-    <b>7️⃣ Deployment:</b>
-    <br />
-    Easily deploy your application using the **preconfigured script** or configure your own deployment method.
-    <br /><br />
-  </p>
-
-  ---
-
-  <p align="center">
-    <a href="https://github.com/unspecifiedcoder/"><strong>Author</strong></a> ·
-    <a href="https://github.com/mza-codes/minimal-react/issues/"><strong>Report Issues</strong></a> ·
-    <a href="https://github.com/unspecifiedcoder/Ozone-protocol-Web/pulls/"><strong>Contribute via Pull Requests</strong></a>
+    🔗 **Author:** <a href="https://github.com/unspecifiedcoder/">unspecifiedcoder</a><br />
+    🔗 **Issues:** <a href="https://github.com/mza-codes/minimal-react/issues/">Report a Bug</a><br />
+    🔗 **Pull Requests:** <a href="https://github.com/unspecifiedcoder/Ozone-protocol-Web/pulls/">Contribute via PRs</a><br />
   </p>
 </p>
